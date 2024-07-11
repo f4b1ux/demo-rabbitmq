@@ -1,0 +1,21 @@
+{
+  "name": "demo-rabbitmq",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "rabbitmq-client": "^4.6.0"
+  },
+  "devDependencies": {
+    "envk": "^3.4.0"
+  },
+  "scripts": {
+    "prod-cons:producer": "node -r envk producer-consumer/producer.js",
+    "prod-cons:consumer": "node -r envk producer-consumer/consumer.js",
+    "pub-sub:publisher": "node -r envk pub-sub/publisher.js",
+    "pub-sub:subscriber": "node -r envk pub-sub/subscriber.js",
+    "pub-sub-2:publisher": "node -r envk pub-sub-2/publisher.js",
+    "pub-sub-2:subscriber": "node -r envk pub-sub-2/subscriber.js"
+  }
+}
